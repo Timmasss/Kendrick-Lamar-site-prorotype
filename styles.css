@@ -1,103 +1,102 @@
-    /* Общие стили */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #101010;
-    color: #fff;
-    line-height: 1.6;
-    background-color: #111;
-}
-
-/* Шапка */
-.header {
-    background-color: #111;
-    color: #fff;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.header .nav ul {
-    list-style: none;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
+    background-color: #121212;
+    color: #f0f0f0;
 }
 
-.header .nav ul li {
-    margin: 0 15px;
-}
-
-.header .nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.header .nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Главный блок */
-.hero {
-    background: url('https://w0.peakpx.com/wallpaper/856/983/HD-wallpaper-black-and-white-of-kendrick-lamar-wearing-white-t-shirt-and-black-cap-kendrick-lamar.jpg') no-repeat center center/cover;
-    color: #fff;
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
     text-align: center;
-    padding: 100px 20px;
 }
 
-.hero h1 {
+header h1 {
+    color: #ff4c00;
     font-size: 3em;
-    margin: 0;
 }
 
-.hero p {
-    font-size: 1.2em;
-}
-
-/* Основной контент */
-.main-content {
-    max-width: 1200px;
-    margin: 20px auto;
+nav {
     display: flex;
+    justify-content: center;
     gap: 20px;
-    padding: 0 20px;
+    background-color: #222;
+    padding: 10px 0;
 }
 
-.content {
-    background: #1a1a1a;
-    padding: 20px;
-    flex: 3;
-    border-radius: 5px;
+nav a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-.aside {
-    background: #2a2a2a;
-    padding: 20px;
-    flex: 1;
-    border-radius: 5px;
+nav a:hover {
+    color: #ff4c00;
 }
 
-/* Футер */
-.footer {
-    background-color: #111;
-    color: #fff;
+section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section h2 {
+    color: #ff4c00;
+    margin-bottom: 20px;
+}
+
+.music-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.music-card {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 15px;
     text-align: center;
-    padding: 10px;
-}
-
-.footer .social-icons img {
-    width: 24px;
-    margin: 0 10px;
-    vertical-align: middle;
     transition: transform 0.3s;
 }
 
-.footer .social-icons img:hover {
-    transform: scale(1.2);
+.music-card:hover {
+    transform: scale(1.05);
+}
+
+.music-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.music-slider button {
+    background-color: #ff4c00;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.music-slider button:hover {
+    background-color: #e03e00;
+}
+
+#song {
+    min-width: 150px;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #aaa;
 }
